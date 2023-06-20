@@ -88,6 +88,24 @@ var deck = [
     new card("King of Pentacles", "Pentacles", 14, "cardsRWS/P_KingofPentacles.jpeg", ""),
 ];
 
+function getRandom(num) {
+  var randomNumber = Math.floor(Math.random() * num);
+  return randomNumber;
+}
+
+document.getElementById("draw").onclick = function () {
+  var index = getRandom(78);
+  var currentCard = deck[index];
+
+  document.getElementById("display").innerHTML =
+    "<img src='cardsRWS/" +
+    currentCard.image +
+    ".jpeg'/><h3>" +
+    currentCard.name +
+    "</h3><p>" +
+    currentCard.interpretation +
+    "</p>";
+};
 
 // Cards from https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
 // Authorship: Arthur Edward Waite, Artist: Pamela Colman Smith.

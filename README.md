@@ -1,6 +1,11 @@
 # Card-of-the-Day
 card of the day renderer
 
+# This project follows the YouTube tutorial by Topknot Clare:
+JavaScript Tutorial: Dealing Tarot Cards Using An Array of Objects
+https://www.youtube.com/watch?v=RBHdY842V6U
+
+
 # Rider Waite Smith Tarot Deck history and citation:
 The Rider Waite Smith Tarot Deck is a classic tarot deck first published in 1909 by US Games Systems, Inc. It was created by Arthur Edward Waite, a British occultist and author, and Pamela Colman Smith, an American artist and illustrator. The deck features 78 cards, each with its own unique symbolism and meaning, and is widely used for divination, meditation, and spiritual guidance.
 
