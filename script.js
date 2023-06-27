@@ -123,6 +123,17 @@ cardElements.forEach(card => {
   });
 });
 
+// create button element
+const button = document.createElement("button");
+button.textContent = "Reshuffle";
+
+// add event listener to button
+button.addEventListener("click", () => {
+  location.reload();
+});
+
+// append button to the body
+document.body.appendChild(button);
 
 
 // Cards from https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
