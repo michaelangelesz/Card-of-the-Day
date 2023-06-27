@@ -40,8 +40,8 @@ body {
   }
   
   .card {
-    width: 360px;
-    height: 600px;
+    width: 270px;
+    height: 450px;
     font-size: 2rem;
     color: rgb(237, 202, 176);
     display: flex;
