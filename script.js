@@ -5,11 +5,6 @@ h1.textContent = "Card of the Day";
 // append h1 and div to body
 document.body.appendChild(h1);
 
-// sound effects
-const flipSound = new Audio("assets/cardflip.mp3"); 
-flipSound.volume = 0.2;
-flipSound.playbackRate = 2;
-
 const cardsRWS = [
   { name: "The Fool", imgSrc: "cardsRWS/0_theFool.jpeg", alt: "The Fool", },
   { name: "The Magician", imgSrc: "cardsRWS/1_theMagician.jpeg", alt: "The Magician", },
@@ -116,7 +111,6 @@ cardElements.forEach(card => {
   card.addEventListener("click", () => {
     card.classList.toggle("flipped");
     console.log("Card flipped!");
-    flipSound.play();
     const randomIndex = Math.floor(Math.random() * cardsRWS.length);
     const randomCard = cardsRWS[randomIndex];
     card.style.backgroundImage = `url(${randomCard.imgSrc})`;
