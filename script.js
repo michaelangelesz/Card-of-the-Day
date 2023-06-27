@@ -1,10 +1,3 @@
-// create h1 element
-const h1 = document.createElement("h1");
-h1.textContent = "Card of the Day";
-
-// append h1 and div to body
-document.body.appendChild(h1);
-
 const cardsRWS = [
   { name: "The Fool", imgSrc: "cardsRWS/0_theFool.jpeg", alt: "The Fool", },
   { name: "The Magician", imgSrc: "cardsRWS/1_theMagician.jpeg", alt: "The Magician", },
@@ -85,49 +78,6 @@ const cardsRWS = [
   { name: "Queen of Pentacles", imgSrc: "cardsRWS/P_QueenofPentacles.jpeg", alt: "Queen of Pentacles", },
   { name: "King of Pentacles", imgSrc: "cardsRWS/P_KingofPentacles.jpeg", alt: "King of Pentacles", },
 ];
-
-// create main element
-const mainElement = document.createElement("main");
-
-// add "spread" class to main element
-mainElement.classList.add("spread");
-
-// create three cards with labels
-for (let i = 0; i < 1; i++) {
-  // create card element
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  // append card to main element
-  mainElement.appendChild(card);
-}
-
-// add main element to the document
-document.body.appendChild(mainElement); 
-
-// add event listener to each card
-const cardElements = document.querySelectorAll(".card");
-cardElements.forEach(card => {
-  card.addEventListener("click", () => {
-    card.classList.toggle("flipped");
-    console.log("Card flipped!");
-    const randomIndex = Math.floor(Math.random() * cardsRWS.length);
-    const randomCard = cardsRWS[randomIndex];
-    card.style.backgroundImage = `url(${randomCard.imgSrc})`;
-  });
-});
-
-// create button element
-const button = document.createElement("button");
-button.textContent = "Reshuffle";
-
-// add event listener to button
-button.addEventListener("click", () => {
-  location.reload();
-});
-
-// append button to the body
-document.body.appendChild(button);
 
 
 // Cards from https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
