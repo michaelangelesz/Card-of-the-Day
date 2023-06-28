@@ -40,7 +40,7 @@ body {
     background-size: cover;
     background-position: right;
     border: 8px solid #fde9d8;
-    border-radius: 1rem;
+    border-radius: .77rem;
     margin-right: 4rem;
     margin-left: 4rem;
     margin-bottom: .5rem;
@@ -50,6 +50,7 @@ body {
   img {
     max-width: 100%;
     height: 100%;
+    border-radius: .2rem;
   }
 
   button {
