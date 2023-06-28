@@ -98,7 +98,7 @@ document.getElementById("draw").onclick = function () {
   document.getElementById("display").innerHTML =
     '<img src="cardsRWS/' +
     currentCard.image +
-    '.jpeg"><h3>';// +
+    '.jpeg">';//<h3>' +
     // currentCard.name +
     // '</h3><p>' +
     // currentCard.description +
@@ -106,7 +106,8 @@ document.getElementById("draw").onclick = function () {
 };
 
 document.getElementById("reset").onclick = function () {
-  location.reload();
+  document.getElementById("display").innerHTML =
+    '<img src="assets/backOfCard.jpg">';
 };
 
 // Cards from https://en.wikipedia.org/wiki/Rider-Waite_tarot_deck
